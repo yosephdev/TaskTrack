@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+
+body {
+	font-family: 'Lora', serif;
+}
+
+#syssla-1, #attGoraListItem, #fardigaListItem {
+	width: 200px;
+	margin-right: 5px;
+}
+
+#syssla-1 {
+	border: 1px solid rgba(0, 255, 191, 0.924);
+    border-radius: 5px;    
+    height: 20px;
+}
+
+#lagg_till_btn, #andra, #fardig {
+	border-radius: 5px;
+	border: 1px solid #333;
+	margin: 5px;
+    height: 20px;    
+}

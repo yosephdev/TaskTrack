@@ -15,7 +15,7 @@ body {
     height: 20px;
 }
 
-#lagg_till_btn, #andra, #fardig {
+#lagg_till_btn, #andra, #radera, #fardig {
 	border-radius: 5px;
 	border: 1px solid #333;
 	margin: 5px;

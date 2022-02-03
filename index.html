@@ -5,23 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Changemaker Educations AB">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Kunskapskontroll 3 - "Att göra" applikation av Yoseph Berhane</title>
 </head>
 
-<body>
+<body class="p-8 sm:p-16 bg-gray-800 text-black">
 
-  <!-- Lägg till Textfält och en knapp -->
-  <input type="text" id="syssla" placeholder="Din syssla">
-  <button type="button" id="lagg_till_btn">Lägg till</button>
+  <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans mt-20">
+    <div class="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
+      <div class="mb-4">
+        <h1 class="text-3xl md:text-4xl text-gray-600 font-medium mb-2">
+          "Att göra" Applikation
+        </h1>
+        <div class="flex mt-4">
+        </div>
 
-  <!-- Lägg till rubrik och behållare för “Att göra”-lista -->
-  <h2>Att göra</h2>
-  <ul id="att_gora"></ul> 
+        <div>
+          <!-- Lägg till Textfält och en knapp -->
+          <input class="shadow appearance-none border rounded w-half py-2 px-3 mr-4 text-gray-darker" name="text"
+            type="text" id="syssla" placeholder="Din syssla">
+          <button class="bg-purple-500 hover:bg-gray-700 text-white text-center py-2 px-4 rounded" type="button"
+            id="lagg_till_btn" onclick="errorMessage()">Lägg till</button>
+        </div>
+        <span id="fel_namn"></span>
 
-  <!-- Lägg till rubrik och behållare för “Färdiga”-lista -->
-  <h2>Färdiga</h2>
-  <ul id="fardiga"></ul>
+
+        <!-- Lägg till rubrik och behållare för “Att göra”-lista -->
+        <h2 class="text-2xl md:text-1xl text-gray-600 font-medium mb-1">Att göra</h2>
+        <ul id="att_gora"></ul>
+
+
+        <!-- Lägg till rubrik och behållare för “Färdiga”-lista -->
+        <h2 class="text-2xl md:text-1xl text-gray-600 font-medium mb-1">Färdiga</h2>
+        <ul id="fardiga"></ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
 
 
   <script src="js/main.js"></script>

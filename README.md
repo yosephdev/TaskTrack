@@ -32,7 +32,7 @@
 #### Användaren klickar på knappen för att lägga till
 #### Sysslan läggs till ”Att göra”-listan
 
-## Scenario 2 (Redigera syssla)
+## Scenario 2 (Redigera syssla) // Feedback från läraren: en ändrad syssla skall åter kunna låsas //
 #### Sysslans text är låst som default, dvs texten går inte att redigera
 #### Användaren klickar på ‘Ändra’- knappen för att redigera en tillagd syssla
 #### Sysslan går nu att redigera

@@ -1,62 +1,86 @@
-#syssla,
-#attGoraListItem,
-#fardigaListItem {
-    width: 240px;
-    margin-right: 5px;
+/* Center the entire page content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-#attGoraListItem,
-#fardigaListItem {
-    width: 48%;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
+/* Style the container */
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
+/* Style the input field */
 #syssla {
-    border-color: #00ffb3ec;
-    width: 70%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-#andra {
-    border-radius: 5px;
-    border: 1px solid #777;
-    margin: 5px;
-    padding: 10px;
-    width: 14%;
-    height: 100%;
-    margin-left: 5px;
-    background: #34495e;
+/* Style the "Add" button */
+#lagg_till_btn {
+    width: 100%;
+    background-color: #1abc9c;
     color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    text-align: center;
 }
 
-#radera {
-    border-radius: 5px;
-    border: 1px solid #777;
-    margin: 5px;
-    padding: 10px;
-    height: 100%;
-    margin-left: 5px;
-    background: #F44336;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-
+/* Style the error message */
+#fel_namn {
+    color: red;
+    margin-bottom: 10px;
 }
 
-#fardig {
-    border-radius: 5px;
-    border: 1px solid #777;
-    margin: 5px;
+/* Style the task list */
+#att_gora {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style each task item */
+#att_gora li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    width: 14%;
-    height: 100%;
-    margin-left: 5px;
-    background: #27ae60;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the "Done" button */
+.done-btn {
+    background-color: #1abc9c;
     color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
-    text-align: center;
+}
+
+/* Style the "Delete" button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
 }

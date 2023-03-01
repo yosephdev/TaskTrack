@@ -1,86 +1,107 @@
-/* Center the entire page content */
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style body element */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-
-/* Style the container */
-.container {
-    width: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-/* Style the input field */
-#syssla {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
 }
 
-/* Style the "Add" button */
-#lagg_till_btn {
-    width: 100%;
-    background-color: #1abc9c;
+/* Style header */
+nav {
+    background-color: #8a2be2;
     color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 0.5rem;
+    
 }
 
-/* Style the error message */
-#fel_namn {
-    color: red;
-    margin-bottom: 10px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Style the task list */
-#att_gora {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav li a:hover {
+    color: #ddd;
 }
 
-/* Style each task item */
-#att_gora li {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the "Done" button */
-.done-btn {
-    background-color: #1abc9c;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
+nav li {
+    margin: 0 0.5rem;
 }
 
-/* Style the "Delete" button */
-.delete-btn {
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 5px 10px;
+nav li a {
+    color: indigo;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav .font-bold {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.h-screen {
+    padding-top: 3rem;
+    margin-top: -3rem;   
+} 
+
+/* Style list */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+li span {
+    margin-right: 0.5rem;
+}
+
+li button {
+    padding: 0.25rem 0.5rem;
+    background-color: #7c3aed;
+    color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 0.25rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li button:hover {
+    background-color: #6b2aee;
+}
+
+.completed {
+    background-color: #f3f4f6;
+    text-decoration: line-through;
+    color: #6b7280;
 }

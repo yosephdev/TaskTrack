@@ -1,53 +1,34 @@
 ﻿# Att-göra-applikation
- 
- ![Preview](/att-gora-app.png)
 
-## Deluppgift 1: Struktur
-### Skapa strukturen för “Att göra”-applikationen. 
+# Preview
+![Preview](/att-gora-app.jpeg)
 
-#### Nedanför följer en kravlista på minimumkrav för strukturen:
+# Introduction
 
-#### Komponenterna som skapar nya sysslor, ska bestå av
-#### Ett fält där användaren kan skriva in beskrivning av sysslan
-#### En knapp för att lägga till ny syssla
-## ”Att göra”-listan, ska bestå av
-#### Flera sysslor (om användaren har lagt till en syssla, annars tom)
-#### Förutom beskrivningen av sysslan, ska det även finnas knappar kopplade till sysslan för att
-#### Ändra innehållet
-#### Markera sysslan som klar
-#### Radera syssla
-## ”Färdiga”-listan, en lista för färdiga sysslor ska bestå av
-#### Flera sysslor (om användaren har markerat någon syssla som klar annars tom)
-#### Förutom beskrivningen av sysslan, ska det även finnas knappar kopplade till sysslan för att
-#### Ändra innehållet
-#### Radera syssla
+This is a simple "To-do" web application that allows users to create, edit, and delete tasks. The application has two main lists: the "To-do" list and the "Completed" list.
 
-## Deluppgift 2: Interaktion
+# Features
 
-### Implementera lämplig funktionalitet i “Att göra”-applikationen med hjälp av JavaScript. 
-### Utgå från följande scenarion
+ #### Users can create new tasks by entering a task description and clicking the "Add" button.
+ #### Users can edit a task's description by clicking the "Edit" button next to the task.
+ #### Users can mark a task as completed by clicking the "Done" button next to the task, which will move it to the "Completed" list.
+ #### Users can delete a task by clicking the "Delete" button next to the task.
+ #### Users can also edit and delete tasks in the "Completed" list.
 
-## Scenario 1 (Lägga till)
-#### Användaren skriver in sysslan ex. ”handla mat”
-#### Användaren klickar på knappen för att lägga till
-#### Sysslan läggs till ”Att göra”-listan
+# Requirements
 
-## Scenario 2 (Redigera syssla) // Feedback från läraren: en ändrad syssla skall åter kunna låsas //
-#### Sysslans text är låst som default, dvs texten går inte att redigera
-#### Användaren klickar på ‘Ändra’- knappen för att redigera en tillagd syssla
-#### Sysslan går nu att redigera
-#### Användaren redigerar sysslan
-#### Användaren klickar igen på samma knapp för att spara texten.
-#### Sysslans textfält blir låst, och går ej att redigera.
-#### Man skall kunna repetera denna process flera gånger om.
+  #### HTML
+  #### CSS
+  #### JavaScript
 
-## Scenario 3 (Radera syssla)
-#### Användaren klickar på ‘radera’-knappen, som tar bort sysslan från listan
+# Usage
 
-## Scenario 4 (Markera syssla som klar)
-#### Användare klickar på knappen för att markera syssla som klar
-#### Sysslan flyttas från ”Att göra”-listan till en ”Färdiga”-listan
-#### Sysslan finns inte längre i ”Att göra”-listan
-## Scenario 5 (Ändra/Radera färdiga sysslor)
-#### Användaren kan fortfarande ändra och radera sysslor i ‘Färdiga’-listan
+To use the application, simply open the index.html file in your web browser. Once the page is loaded, you can start creating and managing your tasks.
 
+# Credits
+
+This application was created as a project for a web development course.
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
